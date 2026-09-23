@@ -1,0 +1,32 @@
+/* Design tokens — Clinic Dashboard
+   Import this once at the app root (e.g. in main.tsx), before any
+   component styles, so these variables are available everywhere. */
+
+:root {
+  /* Color */
+  --color-bg: #f7f9f7;          /* page background — soft, calming, not clinical white */
+  --color-surface: #ffffff;     /* cards, tiles */
+  --color-border: #dce5df;      /* hairline borders */
+  --color-ink: #1f2a24;         /* primary text — warm near-black, not pure #000 */
+  --color-ink-muted: #5b6b63;   /* secondary text */
+  --color-primary: #3d6657;     /* calming sage-teal — primary actions, "next" state */
+  --color-primary-hover: #335547;
+  --color-accent-warm: #c98a3e; /* used sparingly — reserved for attention states */
+
+  /* Type */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Radius */
+  --radius-lg: 16px;
+  --radius-md: 10px;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+}

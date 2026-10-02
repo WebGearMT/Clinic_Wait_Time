@@ -1,0 +1,204 @@
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T09:19:07.828Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T09:20:58.096Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T09:22:18.711Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T09:22:18.714Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T09:22:18.715Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T09:23:13.649Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T09:23:14.383Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T09:23:22.292Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T09:23:22.433Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T09:29:33.362Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T09:29:33.367Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T09:29:33.367Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T10:35:00.997Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T10:35:01.001Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T10:35:01.002Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T10:35:18.830Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T10:35:18.977Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T10:36:36.085Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T10:36:36.094Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T10:36:36.095Z"}
+[31merror[39m: Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/strategies/session.js:97:41)
+    at attempt (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:378:16)
+    at authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:379:7)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at initialize (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17) {"timestamp":"2026-09-24T10:36:41.596Z"}
+[31merror[39m: Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/strategies/session.js:97:41)
+    at attempt (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:378:16)
+    at authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:379:7)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at initialize (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17) {"timestamp":"2026-09-24T10:36:41.837Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T10:44:30.763Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T10:44:30.767Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T10:44:30.768Z"}
+[31merror[39m: Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/strategies/session.js:97:41)
+    at attempt (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:378:16)
+    at authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:379:7)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at initialize (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17) {"timestamp":"2026-09-24T10:44:36.788Z"}
+[31merror[39m: Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/strategies/session.js:97:41)
+    at attempt (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:378:16)
+    at authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:379:7)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at initialize (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17) {"timestamp":"2026-09-24T10:44:37.083Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T10:45:14.168Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T10:45:14.172Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T10:45:14.172Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:03:20.648Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:03:20.651Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:03:20.652Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:03:35.810Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:03:35.814Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:03:35.814Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:30:23.292Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:30:23.296Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:30:23.296Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:33:09.305Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:33:09.309Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:33:09.309Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:33:13.800Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:33:13.804Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:33:13.804Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:53:10.387Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:53:10.390Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:53:10.391Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:53:16.250Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:53:16.254Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:53:16.254Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:53:31.143Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:53:31.156Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:53:31.158Z"}
+[31merror[39m: Error: Cannot find module 'ejs'
+Require stack:
+- /home/boa-coder64/Development/back-end/node_modules/express/lib/view.js
+- /home/boa-coder64/Development/back-end/node_modules/express/lib/application.js
+- /home/boa-coder64/Development/back-end/node_modules/express/lib/express.js
+- /home/boa-coder64/Development/back-end/node_modules/express/index.js
+- /home/boa-coder64/Development/back-end/src/index.ts
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1564:15)
+    at Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/boa-coder64/Development/back-end/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)
+    at Module._load (node:internal/modules/cjs/loader:1341:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.require (node:internal/modules/cjs/loader:1674:12)
+    at require (node:internal/modules/helpers:157:16)
+    at new View (/home/boa-coder64/Development/back-end/node_modules/express/lib/view.js:81:14) {"timestamp":"2026-09-24T11:53:39.507Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T11:58:36.863Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T11:58:36.866Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T11:58:36.867Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-24T12:02:44.727Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-24T12:02:44.731Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-24T12:02:44.732Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-28T11:18:41.578Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-28T11:18:41.582Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-28T11:18:41.583Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-30T06:01:09.882Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-30T06:01:09.887Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-30T06:01:09.888Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-30T06:53:34.216Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-30T06:53:34.241Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-30T06:53:34.242Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-30T06:53:41.853Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-30T06:53:41.857Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-30T06:53:41.858Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-30T06:54:56.530Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-30T06:54:56.533Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-30T06:54:56.534Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-30T07:09:27.175Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-30T07:09:27.179Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-30T07:09:27.180Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-09-30T07:09:33.908Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-09-30T07:09:33.913Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-09-30T07:09:33.914Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-10-02T14:25:49.605Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-10-02T14:25:49.609Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-10-02T14:25:49.610Z"}
+[32minfo[39m: WJ Parts API server running in development mode on port 4000 {"timestamp":"2026-10-02T14:31:53.273Z"}
+[32minfo[39m: Documentation available at: http://localhost:4000/api-docs {"timestamp":"2026-10-02T14:31:53.277Z"}
+[32minfo[39m: Health check available at: http://localhost:4000/health {"timestamp":"2026-10-02T14:31:53.278Z"}

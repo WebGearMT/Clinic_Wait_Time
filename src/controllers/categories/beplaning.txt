@@ -1,0 +1,8 @@
+Wat is 'n kategorie?
+	'n kategorie is 'n identifiserende label wat gesit word op 'n produk om aan te dui waar in die winkel hy geplaas moet word.
+	Terselfdertyd is daar ook roetes geskep vir elke kategorie.
+	
+Hoe word 'n kategorie geskep?
+	'n kategorie word geskep op Strapi as 'n "content-type".
+	*wanneer kategorie geskep word, word daar ook 'n roete geskep vir hom waar enige produkte wat onder daai kategorie is vetoon word.
+	As 'n alternatief, kan die kategorie eerder 'n configuration kaart wees wat die view update op grond van watter kategorie op gekliek word.

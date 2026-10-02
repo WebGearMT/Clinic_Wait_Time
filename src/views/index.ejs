@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - Welcome</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div class="flex min-h-screen">
+    
+    <!-- Sidebar -->
+    <%- include('partials/sidebar') %>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-10">
+      <h1 class="text-4xl font-bold mb-6">Welcome to the Admin Panel</h1>
+      <p class="text-lg text-gray-700">
+        Manage your ecommerce platform from here. Use the sidebar to navigate to different sections.
+      </p>
+    </main>
+    
+  </div>
+
+</body>
+</html>

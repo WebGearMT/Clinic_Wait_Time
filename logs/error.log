@@ -1,0 +1,129 @@
+[31merror[39m: Database connection error: connect ECONNREFUSED 127.0.0.1:5432 {"cause":{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-111,"port":5432,"syscall":"connect"},"name":"SequelizeConnectionRefusedError","stack":"SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:5432\n    at Client._connectionCallback (/home/boa-coder64/Development/back-end/node_modules/@sequelize/postgres/src/connection-manager.ts:174:24)\n    at Client._handleErrorWhileConnecting (/home/boa-coder64/Development/back-end/node_modules/pg/lib/client.js:408:19)\n    at Client._handleErrorEvent (/home/boa-coder64/Development/back-end/node_modules/pg/lib/client.js:418:19)\n    at Connection.emit (node:events:514:28)\n    at Connection.emit (node:domain:489:12)\n    at Socket.reportStreamError (/home/boa-coder64/Development/back-end/node_modules/pg/lib/connection.js:59:12)\n    at Socket.emit (node:events:514:28)\n    at Socket.emit (node:domain:489:12)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)","timestamp":"2026-09-24T09:19:07.873Z"}
+[31merror[39m: Database connection error: connect ECONNREFUSED 127.0.0.1:5432 {"cause":{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-111,"port":5432,"syscall":"connect"},"name":"SequelizeConnectionRefusedError","stack":"SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:5432\n    at Client._connectionCallback (/home/boa-coder64/Development/back-end/node_modules/@sequelize/postgres/src/connection-manager.ts:174:24)\n    at Client._handleErrorWhileConnecting (/home/boa-coder64/Development/back-end/node_modules/pg/lib/client.js:408:19)\n    at Client._handleErrorEvent (/home/boa-coder64/Development/back-end/node_modules/pg/lib/client.js:418:19)\n    at Connection.emit (node:events:514:28)\n    at Connection.emit (node:domain:489:12)\n    at Socket.reportStreamError (/home/boa-coder64/Development/back-end/node_modules/pg/lib/connection.js:59:12)\n    at Socket.emit (node:events:514:28)\n    at Socket.emit (node:domain:489:12)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)","timestamp":"2026-09-24T09:20:58.121Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T09:23:13.649Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T09:23:14.383Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T09:23:22.292Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T09:23:22.433Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T10:35:18.830Z"}
+[31merror[39m: TypeError: ses_sequelizeStore.create is not a function
+    at sesConfig (/home/boa-coder64/Development/back-end/src/middleware/sessionConfig.ts:11:32)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at logger (/home/boa-coder64/Development/back-end/node_modules/morgan/index.js:177:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9 {"timestamp":"2026-09-24T10:35:18.977Z"}
+[31merror[39m: Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/strategies/session.js:97:41)
+    at attempt (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:378:16)
+    at authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:379:7)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at initialize (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17) {"timestamp":"2026-09-24T10:36:41.596Z"}
+[31merror[39m: Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/strategies/session.js:97:41)
+    at attempt (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:378:16)
+    at authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:379:7)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at initialize (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17) {"timestamp":"2026-09-24T10:36:41.837Z"}
+[31merror[39m: Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/strategies/session.js:97:41)
+    at attempt (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:378:16)
+    at authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:379:7)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at initialize (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17) {"timestamp":"2026-09-24T10:44:36.788Z"}
+[31merror[39m: Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/strategies/session.js:97:41)
+    at attempt (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:378:16)
+    at authenticate (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/authenticate.js:379:7)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/boa-coder64/Development/back-end/node_modules/router/index.js:342:13)
+    at /home/boa-coder64/Development/back-end/node_modules/router/index.js:297:9
+    at processParams (/home/boa-coder64/Development/back-end/node_modules/router/index.js:582:12)
+    at next (/home/boa-coder64/Development/back-end/node_modules/router/index.js:291:5)
+    at initialize (/home/boa-coder64/Development/back-end/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handleRequest (/home/boa-coder64/Development/back-end/node_modules/router/lib/layer.js:152:17) {"timestamp":"2026-09-24T10:44:37.083Z"}
+[31merror[39m: Error: Cannot find module 'ejs'
+Require stack:
+- /home/boa-coder64/Development/back-end/node_modules/express/lib/view.js
+- /home/boa-coder64/Development/back-end/node_modules/express/lib/application.js
+- /home/boa-coder64/Development/back-end/node_modules/express/lib/express.js
+- /home/boa-coder64/Development/back-end/node_modules/express/index.js
+- /home/boa-coder64/Development/back-end/src/index.ts
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1564:15)
+    at Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/boa-coder64/Development/back-end/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)
+    at Module._load (node:internal/modules/cjs/loader:1341:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.require (node:internal/modules/cjs/loader:1674:12)
+    at require (node:internal/modules/helpers:157:16)
+    at new View (/home/boa-coder64/Development/back-end/node_modules/express/lib/view.js:81:14) {"timestamp":"2026-09-24T11:53:39.507Z"}

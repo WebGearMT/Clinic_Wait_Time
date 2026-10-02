@@ -1,0 +1,50 @@
+===The User===
+Age group: 45-60
+Gender: Female
+Description: 
+"""
+the target user is a generation X small business owner who needs a website to run her Toyota auto parts business.
+The user describes herself as severly technologically disabled 
+(a humoristic sarcastic term for referring to their lack of understanding of technology).
+Furthermore, the user needs to leverage an impairment (glasses) when reading through text and analyzing images.
+"""
+===Product Requirement===
+A very quick and simple application that serves as a dashboard for managing the application. Accessibility should be taken into account.
+The application should allow the user to write posts for the blog of this website, add new pages, update products. 
+Furthermore, the user should be able to manage application users and their priveleges (subscribers, admins etc.), the mailing list, analytics,
+as well as updates to the application.
+
+===Technology Stack===
+Front-end: EJS (view engine)
+Back-end: Node.JS
+Database: PostgreSQL
+
+===Information Architecture===
+
+Dashboard Home
+	|
+	Aside
+	|	|
+	|	Pages
+	|	|	|
+	|	|	Home
+	|	|	About
+	|	|	Contact
+	|	|	Shop
+	|	|	Blog
+	|	|	
+	|	Categories
+	|	Blog
+	|	Templates
+	|	|	|
+	|	|	Header
+	|	|	Body
+	|	|	Footer
+	|	|
+	|	Analytics (Google Analytics & Microsoft Clarity)
+	|	Media
+	|	Mailing List
+	|	Users
+	|	Profile
+	|	Updates
+		

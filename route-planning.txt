@@ -1,0 +1,71 @@
+====================
+Routes om te beplan
+====================
+
+Kategorië 
+----------
+Old Parts:
+	* Engine Components (120)
+	* Body Panels (90)
+	* Interior Parts (80)
+	* Electrical Components (70)
+	* Suspension Parts (60)
+New Parts:
+	* Braking System (150)
+	* Filters and Fluids (130)
+	* Lighting and Electrical (110)
+	* Engine Components (100)
+	* Exterior Accessories (90)
+Strip for Spares
+	* Toyota Hilux Stripped Cars (20)
+	* Toyota Landcruiser Stripped Cars (15)
+	* Engine Assemblies (30)
+	* Body Frames (25)
+	* Interior Trim (20)
+	
+Inligting wat ons soek uit 'n route:
+	* inventory
+	* beeld
+	* naam
+	* prys
+	* part nommer
+	* ratings
+	* ander spesifikasies (vir die tabel)
+	
+Funksies van 'n roete moet insluit:
+	* kry inligting
+	* opdateeer inligting
+	* verwyder inligting
+	* plaas nuwe inligting
+		* die versoek voorwerp word gestuur na die url wat gegee word 
+		  (die url lei na 'n postgres tabel toe.)
+		* die tabel word bepaal volgens 'n argument in 'n funksie.
+	* voeg tot mandjie
+	* verwyder uit mandjie
+	* vergroot bestelling
+	* verminder bestelling
+	* 
+
+
+
+Verseker en Sekuriteit
+----------------------
+
+signUp
+	* kry inligting uit vorm
+	* kyk dat dit in die regte formaat is
+	* kyk dat dit nie kode bevat nie
+	* hash die wagwoord met bcrypt
+	* sit om in json in
+	* kyk dat recaptcha ingevul is.
+	* stuur databasis tabel toe (POST)
+login
+	* kry inligting uit databasis
+	* kyk dat die epos korrek is
+	* kyk dat die wagwoord korrek is
+	* kyk dat recaptcha ingevul is.
+	* stuur die otp kode vorm aan (totp)
+	* dig 'n sessie toe aan gebruiker
+signOut
+	* termineer gebruikers sessie.
+totp

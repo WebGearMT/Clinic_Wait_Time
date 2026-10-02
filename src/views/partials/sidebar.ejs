@@ -1,0 +1,37 @@
+<aside class="w-64 bg-white shadow-lg p-6">
+  <h2 class="text-2xl font-bold mb-6">Admin Panel</h2>
+
+  <nav class="space-y-4 text-gray-800">
+    <a href="/login" class="block hover:text-blue-600">Login</a>
+    <a href="/sign-up" class="block hover:text-blue-600">Sign Up</a>
+    <a href="/totp" class="block hover:text-blue-600">TOTP</a>
+    <a href="/" class="block hover:text-blue-600">Welcome</a>
+    <a href="/updates" class="block hover:text-blue-600">Updates</a>
+    <a href="/home" class="block hover:text-blue-600">Home</a>
+    <a href="/about-us" class="block hover:text-blue-600">About Us</a>
+    <a href="/contact-us" class="block hover:text-blue-600">Contact Us</a>
+    <a href="/media" class="block hover:text-blue-600">Media</a>
+    <a href="/analyses" class="block hover:text-blue-600">Analyses</a>
+    <a href="/mailing-list" class="block hover:text-blue-600">Mailing List</a>
+
+    <!-- Users -->
+    <div>
+      <p class="font-semibold mt-4">Users</p>
+      <a href="/users/user-1" class="ml-4 block hover:text-blue-600">User 1</a>
+      <a href="/users/user-2" class="ml-4 block hover:text-blue-600">User 2</a>
+    </div>
+
+    <!-- Blog -->
+    <div>
+      <p class="font-semibold mt-4">Blog</p>
+      <a href="/blog" class="ml-4 block hover:text-blue-600">Index</a>
+      <a href="/blog/archive" class="ml-4 block hover:text-blue-600">Archive</a>
+      <a href="/blog/categories" class="ml-4 block hover:text-blue-600">Categories</a>
+      <a href="/blog/categories/category-1" class="ml-6 block hover:text-blue-600">Category 1</a>
+      <a href="/blog/categories/category-2" class="ml-6 block hover:text-blue-600">Category 2</a>
+    </div>
+
+	<%- include('categories') %>
+
+  </nav>
+</aside>

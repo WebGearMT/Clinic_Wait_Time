@@ -1,0 +1,4 @@
+docker name: wj-parts-container
+gebruiker: wj-admin
+postgres_db: wj-parts
+wagwoord: Begubei3$#Asseringsbeleidsverklaring

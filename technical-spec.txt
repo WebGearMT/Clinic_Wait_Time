@@ -1,0 +1,120 @@
+Technical Spec — Toyota Parts Admin Panel
+1. Project Overview
+
+An internal admin dashboard for a small business owner selling Toyota Land Cruiser/Hilux parts (new, used, and strip-for-spare vehicles). The panel manages the public-facing site's content (pages, blog, templates), commerce (products), audience (users, mailing list), and oversight (analytics, updates) — all through a low-friction, accessibility-first UI.
+
+Design constraint that shapes everything: the primary user is not technical and has visual reading strain. Every screen should favor plain language, generous spacing/contrast, and forgiving interactions (confirmations before destructive actions, autosave, undo) over density or cleverness.
+
+2. Tech Stack
++---------------+------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| LAYER         | CHOICE                                                           | NOTES                                                                                                                                                                                               |
++---------------+------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Runtime       | Node.js (LTS)                                                    |                                                                                                                                                                                                     |
+| Framework     | Express.js                                                       | Pairs naturally with EJS.                                                                                                                                                                           |
+| Views         | EJS + express-ejs-layouts                                         | Layouts give you one shared header/nav/footer shell for the admin panel itself.                                                                                                                     |
+| Database      | PostgreSQL                                                       |                                                                                                                                                                                                     |
+| Query Layer   | Knex.js (query builder) or Sequelize/Prisma (ORM)                | Knex is lighter-weight and pairs well with raw SQL you can reason about; Prisma gives migrations + types for free. Default to Knex + node-pg-migrate unless you want an ORM's structure.          |
+| Auth          | express-session + connect-pg-simple (session store) + bcrypt     | Simple cookie-session auth is enough here — no need for JWT complexity in a server-rendered admin panel.                                                                                            |
+| File Uploads  | multer -> local disk or S3-compatible bucket                     | Product/media images.                                                                                                                                                                               |
+| Validation    | express-validator                                                | Server-side validation with friendly error messages (important for the low-tech user).                                                                                                              |
+| Security      | helmet, csurf, express-rate-limit                                | Baseline hardening.                                                                                                                                                                                 |
+| Email         | nodemailer (transactional) + SendGrid/Mailchimp API (bulk)       | Don't roll your own bulk-sender/deliverability — use a provider's API for the mailing list feature.                                                                                               |
+| Env Config    | dotenv                                                           |                                                                                                                                                                                                     |
+| Architecture  | Classic server-rendered MVC                                      | routes/ -> controllers/ -> services/ (business logic + db) -> views/ (EJS). Keeps the low-JS, accessible, fast-loading profile (no SPA complexity or client-side state management).                 |
++---------------+------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+3. Accessibility Baseline (applies to every module below)
+
+Given the target user explicitly needs visual/reading accommodation:
+
+	* WCAG 2.1 AA minimum as the floor, not the ceiling
+	* Base font-size ≥ 18px, with a user-toggleable "larger text" mode (persisted per admin user)
+	* High-contrast color palette by default; avoid relying on color alone for status (use icon + text, e.g. "✓ Published" not just a green dot)
+	* Icon-only buttons are disallowed — every action button gets a visible text label
+	* Forms: one clear task per screen where possible, large touch targets, inline validation with plain-language errors ("This field can't be empty" not 
+	  "Validation failed: 422")
+	* Destructive actions (delete product, remove user, unpublish page) always require a confirmation modal that names what will be affected
+	* Autosave drafts for long content (blog posts, pages) so nothing is lost
+	* Image uploads require alt-text input — make it required, not optional, since the user manages product photography and alt text helps her own site's 	
+	  accessibility too
+	* Keyboard navigability and semantic HTML (<nav>, <main>, <button> not <div onclick>) throughout
+	
+4. Data Model 
++---------------------+--------------------------------------------------------------------------------------------------------+
+| TABLE NAME          | COLUMNS / FIELDS                                                                                       |
++---------------------+--------------------------------------------------------------------------------------------------------+
+| users               | id, name, email, password_hash, role_id, avatar_url, created_at                                        |
+| roles               | id, name (owner/admin/editor), permissions (jsonb)                                                     |
+|                     |                                                                                                        |
+| pages               | id, slug, title, content, status (draft/published), updated_by, updated_at                             |
+| templates           | id, section (header/body/footer), content, updated_at                                                 |
+|                     |                                                                                                        |
+| blog_posts          | id, title, slug, body, cover_image_id, status, category_id, author_id, published_at                    |
+| categories          | id, name, slug, type (blog/product)                                                                    |
+|                     |                                                                                                        |
+| products            | id, name, sku, description, condition (new/used), vehicle_make, vehicle_model (landcruiser/hilux/...), |
+|                     | category_id, price, stock_qty, status, created_at                                                      |
+| product_images      | id, product_id, media_id, sort_order                                                                   |
+|                     |                                                                                                        |
+| media               | id, filename, url, alt_text, uploaded_by, created_at                                                   |
+|                     |                                                                                                        |
+| mailing_subscribers | id, email, name, subscribed_at, status (active/unsubscribed)                                           |
+| mailing_campaigns   | id, subject, body, sent_at, status                                                                     |
+|                     |                                                                                                        |
+| site_settings       | key, value  -- e.g. ga_tracking_id, clarity_project_id                                                 |
+| updates             | id, title, body, published_at  -- changelog/announcements                                              |
+|                     |                                                                                                        |
+| audit_log           | id, user_id, action, entity, entity_id, created_at                                                     |
++---------------------+--------------------------------------------------------------------------------------------------------+
+
+5. Module Breakdown (mapped to your IA)
++------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| MODULE NAME                        | DESCRIPTION & KEY FUNCTIONALITY                                                                                                                   |
++------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Dashboard Home                     | At-a-glance cards: recent orders/products, recent blog activity, subscriber count, quick links. Orientation for non-technical users.             |
+| Pages                              | Simple content editor (rich text or block-based) per page (Home/About/Contact/Shop/Blog). Status: draft/published.                                |
+| Categories                         | Shared taxonomy for products and/or blog. Simple CRUD list.                                                                                       |
+| Blog                               | Post list, create/edit with cover image, category, publish/schedule.                                                                              |
+| Templates                          | Site-wide chrome (Header/Body/Footer): nav links, footer text/contact info, hero block. Constrained fixed fields (no free-form code editing).     |
+|                                    |                                                                                                                                                    |
+| Analytics [Assumption to Confirm]  | Settings + embed screen: GA4 ID & Clarity project ID fields (injected into site <head>), plus embedded dashboard iframe or external links.       |
+| Media                              | Upload/browse library, required alt text. Used across products, blog, and pages.                                                                   |
+| Mailing List                       | Subscriber list (add/remove/export), campaign sending via transactional provider API.                                                              |
+| Users [Assumption to Confirm]      | Staff accounts (owner/admin/editor) and optional customer/subscriber accounts. Clarify if subscriber accounts live here or in Mailing List.      |
+| Profile                            | Logged-in admin's account settings (name, password, avatar, text-size preference).                                                                |
+| Updates [Assumption to Confirm]    | In-app changelog/announcements feed for the owner ("what's new in your dashboard"), NOT a software self-update mechanism.                          |
++------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+6. Roles & Permissions
+
++-----------------------+---------------------------------------------------------------------------------------+
+| ROLE                  | CAN DO / PERMISSIONS                                                                 |
++-----------------------+---------------------------------------------------------------------------------------+
+| Owner/Admin           | Everything, including managing other users' roles.                                     |
+| Editor                | Pages, blog, products, media — cannot access users or settings.                       |
+| (Front-end) Subscriber| Not a panel role at all — just a mailing-list/customer record with no admin access.   |
++-----------------------+---------------------------------------------------------------------------------------+
+
+Store permissions as a jsonb column on roles so you can adjust without schema migrations later.
+
+7. Non-Functional Requirements
+
+Security: Hashed passwords (bcrypt), CSRF tokens on all forms, rate-limited login, parameterized queries throughout (handled by Knex), and file-upload type/size validation.
+
+Performance: Fast server-rendered pages by default with this stack; media served via CDN or optimized static hosting as volume grows.
+
+Backups: Scheduled PostgreSQL backups (a daily pg_dump cron job is sufficient at this scale).
+
+Audit Trail: Log of changes made to products, pages, and users -- useful for a non-technical owner to track "what changed."
+8. Suggested Build Order
+	1. Project scaffold + auth (login/session) + accessible dashboard shell (aside nav, layout),
+	2.Users & roles,
+	3. Products (the core revenue feature),
+	4. Pages & Templates,
+	5. Blog & Categories,
+	6. Media library,
+	6. Mailing List,
+	7. Analytics settings,
+	8. Updates/changelog,
+	9. Accessibility & QA pass across everything
+	
+

@@ -1,0 +1,17 @@
+										  ================================ SERVER COMMANDS ================================ 
+wjadmin
+------ Postgress Inside Docker Setup ------ 
+docker run -d \
+--name postgres-wjparts \
+-e POSTGRES_PASSWORD=postgres \
+-e POSTGRES_USER=postgres \
+-e POSTGRES_DB=postgres \
+-v $(pwd)/postgres-data:/var/lib/postgresql/data postgres
+-p 5432:5432 \
+postgres
+
+------ Enter Container ------
+sudo docker exec -it postgres-wjparts bash
+
+------ Enter Database ------
+psql -h localhost -p 5432 -U postgres

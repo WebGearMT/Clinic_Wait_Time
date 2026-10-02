@@ -1,0 +1,17 @@
+
+=== SETTINGS ===
+
+If user clicks on <language>:
+	1. <language> is mapped to the object in DB related to <language>,
+		* function langText:
+			1. Which page is the user on?
+			2. Which language is clicked on?
+			3. Use answers to questions in #1 and #2 to set up a query string to retrieve the target string from DB.
+				3.a map the name of the language to the locale code in translations.ts (eg. "english" --> "en").
+				3.b. setup the query string.
+		* To-Do: Change the language objects in translations.ts (to be moved to DB) to have the same names as the language options on the front-end.
+	2. <text> on the front-end is replaced with <string> from DB.
+	
+To be discarded:
+	* color-blind themes from the theme options.
+	
